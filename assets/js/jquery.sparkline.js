@@ -205,7 +205,7 @@
 (function(document, Math, undefined) { // performance/minified-size optimization
 (function(factory) {
     if(typeof define === 'function' && define.amd) {
-        define(['jquery'], factory);
+        define(['assets/js/jquery'], factory);
     } else if (jQuery && !jQuery.fn.sparkline) {
         factory(jQuery);
     }
@@ -367,7 +367,7 @@
             'font: 10px arial, san serif;' +
             'text-align: left;' +
             'white-space: nowrap;' +
-            
+
             'border: 1px solid white;' +
             'z-index: 10000;' +
             '}' +
