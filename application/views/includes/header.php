@@ -7,10 +7,15 @@
 	<meta name="author" content="Dashboard">
 	<meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-	<title>DASHGUM - FREE Bootstrap Admin Template</title>
+	<title>UDEMY TUTORIAL</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js" defer></script>
+     <script src="<?= base_url(); ?>assets/js/jquery.js"></script>
+    <script src="<?= base_url(); ?>assets/js/jquery-1.8.3.min.js"></script>
 
 	<!-- Bootstrap core CSS -->
-	<link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
+	<link href="<?= base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
 	<!--external css-->
 	<link href="<?= base_url() ?>assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/zabuto_calendar.css">
@@ -18,10 +23,10 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/lineicons/style.css">
 
 	<!-- Custom styles for this template -->
-	<link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet">
-	<link href="<?php echo base_url(); ?>assets/css/style-responsive.css" rel="stylesheet">
+	<link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
+	<link href="<?= base_url(); ?>assets/css/style-responsive.css" rel="stylesheet">
 
-	<script src="<?php echo base_url(); ?>assets/js/chart-master/Chart.js"></script>
+	<script src="<?= base_url(); ?>assets/js/chart-master/Chart.js"></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -42,7 +47,7 @@
 			<div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
 		</div>
 		<!--logo start-->
-		<a href="index.html" class="logo"><b>DASHGUM FREE</b></a>
+		<a href="index.html" class="logo"><b>UDEMY</b></a>
 		<!--logo end-->
 		<div class="nav notify-row" id="top_menu">
 			<!--  notification start -->
@@ -129,7 +134,7 @@
 						</li>
 						<li>
 							<a href="index.html#">
-								<span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
+								<span class="photo"><img alt="avatar" src="<?= base_url() ?>assets/img/ui-zac.jpg"></span>
 								<span class="subject">
                                     <span class="from">Zac Snider</span>
                                     <span class="time">Just now</span>
@@ -141,7 +146,7 @@
 						</li>
 						<li>
 							<a href="index.html#">
-								<span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+								<span class="photo"><img alt="avatar" src="<?= base_url() ?>assets/img/ui-divya.jpg"></span>
 								<span class="subject">
                                     <span class="from">Divya Manian</span>
                                     <span class="time">40 mins.</span>
@@ -153,7 +158,7 @@
 						</li>
 						<li>
 							<a href="index.html#">
-								<span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+								<span class="photo"><img alt="avatar" src="<?= base_url() ?>assets/img/ui-danro.jpg"></span>
 								<span class="subject">
                                     <span class="from">Dan Rogers</span>
                                     <span class="time">2 hrs.</span>
@@ -165,7 +170,7 @@
 						</li>
 						<li>
 							<a href="index.html#">
-								<span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
+								<span class="photo"><img alt="avatar" src="<?= base_url() ?>assets/img/ui-sherman.jpg"></span>
 								<span class="subject">
                                     <span class="from">Dj Sherman</span>
                                     <span class="time">4 hrs.</span>

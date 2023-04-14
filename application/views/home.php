@@ -93,7 +93,7 @@ MAIN CONTENT
 								<div class="col-sm-6 col-xs-6"></div>
 							</div>
 							<div class="centered">
-								<img src="assets/img/product.png" width="120">
+								<img src="<?=  base_url(); ?>assets/img/product.png" width="120">
 							</div>
 						</div>
 					</div><!-- /col-md-4 -->
@@ -104,7 +104,7 @@ MAIN CONTENT
 							<div class="white-header">
 								<h5>TOP USER</h5>
 							</div>
-							<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+							<p><img src="<?=  base_url(); ?>assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
 							<p><b>Zac Snider</b></p>
 							<div class="row">
 								<div class="col-md-6">
@@ -301,7 +301,7 @@ MAIN CONTENT
 				<!-- First Member -->
 				<div class="desc">
 					<div class="thumb">
-						<img class="img-circle" src="assets/img/ui-divya.jpg" width="35px" height="35px" align="">
+						<img class="img-circle" src="<?=  base_url(); ?>assets/img/ui-divya.jpg" width="35px" height="35px" align="">
 					</div>
 					<div class="details">
 						<p><a href="#">DIVYA MANIAN</a><br/>
@@ -312,7 +312,7 @@ MAIN CONTENT
 				<!-- Second Member -->
 				<div class="desc">
 					<div class="thumb">
-						<img class="img-circle" src="assets/img/ui-sherman.jpg" width="35px" height="35px" align="">
+						<img class="img-circle" src="<?=  base_url(); ?>assets/img/ui-sherman.jpg" width="35px" height="35px" align="">
 					</div>
 					<div class="details">
 						<p><a href="#">DJ SHERMAN</a><br/>
@@ -323,7 +323,7 @@ MAIN CONTENT
 				<!-- Third Member -->
 				<div class="desc">
 					<div class="thumb">
-						<img class="img-circle" src="assets/img/ui-danro.jpg" width="35px" height="35px" align="">
+						<img class="img-circle" src="<?=  base_url(); ?>assets/img/ui-danro.jpg" width="35px" height="35px" align="">
 					</div>
 					<div class="details">
 						<p><a href="#">DAN ROGERS</a><br/>
@@ -334,7 +334,7 @@ MAIN CONTENT
 				<!-- Fourth Member -->
 				<div class="desc">
 					<div class="thumb">
-						<img class="img-circle" src="assets/img/ui-zac.jpg" width="35px" height="35px" align="">
+						<img class="img-circle" src="<?=  base_url(); ?>assets/img/ui-zac.jpg" width="35px" height="35px" align="">
 					</div>
 					<div class="details">
 						<p><a href="#">Zac Sniders</a><br/>
@@ -345,7 +345,7 @@ MAIN CONTENT
 				<!-- Fifth Member -->
 				<div class="desc">
 					<div class="thumb">
-						<img class="img-circle" src="assets/img/ui-sam.jpg" width="35px" height="35px" align="">
+						<img class="img-circle" src="<?=  base_url(); ?>assets/img/ui-sam.jpg" width="35px" height="35px" align="">
 					</div>
 					<div class="details">
 						<p><a href="#">Marcel Newman</a><br/>
