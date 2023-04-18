@@ -48,34 +48,67 @@ class Dashboard extends CI_Controller
 
     }
 
-     function loadViews($view,$data=null){
-        // SI TENEMOS SESION CREADA
-        if($_SESSION['username']){
-            // si la vista es login se redirige a la home
-            if($view=="login"){
-                redirect(base_url()."Dashboard","location");
-            }
-            // si la vista cualquiera se carga
-            $this->load->view('includes/header');
-            $this->load->view('includes/sidebar');
-            $this->load->view($view,$data);
-            $this->load->view('includes/footer');
-        }else{
-            // SI NO TENEMOS INICIADA SESION
-            if($view=="login"){
-                // si la vista es login se carga
-                $this->load->view($view);
+     function loadViews($view,$data=null)
+     {
+         // SI TENEMOS SESION CREADA
+         if ($_SESSION['username']) {
+             // si la vista es login se redirige a la home
+             if ($view == "login") {
+                 redirect(base_url() . "Dashboard", "location");
+             }
+             // si la vista cualquiera se carga
+             $this->load->view('includes/header');
+             $this->load->view('includes/sidebar');
+             $this->load->view($view, $data);
+             $this->load->view('includes/footer');
+         } else {
+             // SI NO TENEMOS INICIADA SESION
+             if ($view == "login") {
+                 // si la vista es login se carga
+                 $this->load->view($view);
+             } else {
+                 // si la vista es otra cualquiera se redirege a login
+                 redirect(base_url() . "Dashboard/login", "location");
+             }
+
+         }
+     }
+        public function crearTareas(){
+
+        if($_POST){
+            if($_FILES['archivo']){
+                $config['upload_path']          = './uploads/';
+                $config['allowed_types']        = 'gif|jpg|png';
+                $config['file_name']            = uniqid().$_FILES['archivo']['name'] ;
+                $this->load->library('upload', $config);
+                if ( ! $this->upload->do_upload('archivo')) {
+                    echo"error";
+                } else{
+                    $this->site_model->uploadTarea($_POST,$config['file_name'] );
+                }
             }else{
-                // si la vista es otra cualquiera se redirege a login
-                redirect(base_url()."Dashboard/login","location");
+                $this->site_model->uploadTarea($_POST );
             }
 
+
+        }
+        $this->loadViews('creartareas');
         }
        function eliminarAlumno(){
             if($_POST['idalumno']){
                 $this->site_model->deleteAlumno($_POST['idalumno']);
             }
        }
-     }
+
+       function misTareas(){
+         if($_SESSION['id']){
+             $data['tareas']= $this->site_model->getTareas($_SESSION['curso']);
+             $this->loadViews('mistareas',$data);
+         }else{
+             redirect(base_url() . "Dashboard", "location");
+         }
+
+       }
+
 
 }

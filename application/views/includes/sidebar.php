@@ -35,7 +35,7 @@
 
                 </li>
 			<li class="sub-menu">
-				<a href="javascript:;" >
+				<a href="<?= base_url()?> Dashboard/crearTareas" >
 					<i class="fa fa-desktop"></i>
 					<span>Crear Tareas</span>
 				</a>
@@ -44,7 +44,7 @@
             }
             ?>
 			<li class="sub-menu">
-				<a href="javascript:;" >
+				<a href="<?= base_url()?> Dashboard/misTareas" >
 					<i class="fa fa-book"></i>
 					<span>Mis Tareas </span>
 				</a>
