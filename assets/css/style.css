@@ -2244,5 +2244,23 @@ label {
     padding: 25px;
     text-align: center;
 }
+#btnmensaje{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: #ffd777;
+    border: 1px solid #ffd777;
+}
+.isreadclass{
+    background: #7be37b;
+    color: white;
+    text-align: center;
+    cursor:cell;
+}
+.noreadclass{
+    background: #e37b7b;
+    color: white;
+    text-align: center;
+    cursor:cell;
+}
 
 

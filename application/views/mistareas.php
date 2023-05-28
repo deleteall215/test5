@@ -3,6 +3,7 @@
 
 <div class="row">
 <?php
+
  foreach ($tareas as $t) {
 ?>
 <div class="col-md-4 tarea">
